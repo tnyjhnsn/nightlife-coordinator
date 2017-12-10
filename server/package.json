@@ -1,0 +1,33 @@
+{
+  "name": "venues-server",
+  "version": "1.0.0",
+  "description": "Venues Coordination App",
+  "main": "dist/src/server.js",
+  "author": "Tony Johnson <tony@tosp.net.au>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon src/server.js --exec 'yarn run lint && node'",
+    "lint": "eslint **/*.js"
+  },
+  "devDependencies": {
+    "eslint": "^4.11.0"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "dotenv": "^4.0.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "find-or-create": "^1.1.0",
+    "mongoose": "^4.13.5",
+    "morgan": "^1.9.0",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "passport-github": "^1.1.0",
+    "passport-google-oauth": "^1.0.0",
+    "passport-twitter": "^1.0.4"
+  }
+}
